@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box;
 }
+
+.container {
+  widows: 60%;
+  max-width: 800px;
+  margin: 0 auto;
+}
 #clock-face {
   width: 400px;
   height: 400px;
@@ -8,12 +14,10 @@
   border: solid 5px blue;
   background-color: black;
   color: rgb(82, 247, 17);
-  /* color: black; */
   font-size: 3rem;
   text-align: center;
   padding: 10.5rem 2rem;
   margin: 0 auto;
-
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -23,9 +27,9 @@
   height: 100px;
   background: rgb(82, 247, 17);
   border-radius: 17%;
-  position: absolute;
-  top: 170px;
-  left: 469px;
+  position: relative;
+  top: -303px;
+  left: 386px;
   transform-origin: bottom;
   animation: rotateHour 43200s infinite;
 }
@@ -34,9 +38,9 @@
   height: 130px;
   background: rgb(82, 247, 17);
   border-radius: 17%;
-  position: absolute;
-  top: 140px;
-  left: 470px;
+  position: relative;
+  top: -434px;
+  left: 385px;
   transform-origin: bottom;
 }
 #secondHand {
@@ -44,9 +48,9 @@
   height: 150px;
   background: blue;
   border-radius: 17%;
-  position: absolute;
-  top: 120px;
-  left: 470px;
+  position: relative;
+  top: -585px;
+  left: 385px;
   transform-origin: bottom;
 }
 
@@ -56,22 +60,24 @@
   font-weight: 500;
 }
 .twelve {
-  position: absolute;
-  top: -130px;
-  left: 438px;
+  position: relative;
+  top: -970px;
+  left: 370px;
+  color: blue;
 }
 
 #digital {
-  position: absolute;
+  position: relative;
   width: 400px;
   height: 100px;
   background: blue;
-  top: 560px;
-  left: 300px;
+  top: -650px;
+  left: 200px;
   border-radius: 10px;
   color: rgb(82, 247, 17);
   text-align: center;
-  font-size: 5em;
+  font-size: 4em;
+  padding-top: 10px;
 }
 
 .clock-faces {
@@ -79,7 +85,7 @@
   height: 150px;
   background: rgb(85, 71, 71);
   position: relative;
-  top: 200px;
+  top: -600px;
 }
 
 .images {
